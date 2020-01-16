@@ -1,19 +1,8 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%2345678901234567890123456789012345678901234567890123456789012345678901234567890
-%        1         2         3         4         5         6         7         8
-
-\documentclass[letterpaper, 10 pt, conference]{ieeeconf}  % Comment this line out
-                                                          % if you need a4paper
-%\documentclass[a4paper, 10pt, conference]{ieeeconf}      % Use this line for a4
-                                                          % paper
-
-\IEEEoverridecommandlockouts                              % This command is only
+\documentclass[letterpaper, 10 pt, conference]{ieeeconf}
+                                                          
+%\IEEEoverridecommandlockouts                             % This command is only
                                                           % needed if you want to
                                                           % use the \thanks command
-\overrideIEEEmargins
-% See the \addtolength command later in the file to balance the column lengths
-% on the last page of the document
-
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 
@@ -23,6 +12,9 @@
 \usepackage[coloroftodonotes]{todonotes}
 % For hyperlinks
 \usepackage{hyperref}
+
+% Color of the section titles and questions - made violet for easy differentiation, but choose any color you like
+\newcommand{\sectioncolor}{violet}
 
 % The following packages can be found on http:\\www.ctan.org
 %\usepackage{graphics} % for pdf, bitmapped graphics files
@@ -35,36 +27,32 @@
 
 % TITLE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{\LARGE \bf
-YOUR DATASET NAME HERE
+    DATASHEET: \\
+    YOUR DATASET NAME HERE
 }
 
-%\author{ \parbox{3 in}{\centering Huibert Kwakernaak*
-%         \thanks{*Use the $\backslash$thanks command to put information here}\\
-%         Faculty of Electrical Engineering, Mathematics and Computer Science\\
-%         University of Twente\\
-%         7500 AE Enschede, The Netherlands\\
-%         {\tt\small h.kwakernaak@autsubmit.com}}
-%         \hspace*{ 0.5 in}
-%         \parbox{3 in}{ \centering Pradeep Misra**
-%         \thanks{**The footnote marks may be inserted manually}\\
-%        Department of Electrical Engineering \\
-%         Wright State University\\
-%         Dayton, OH 45435, USA\\
-%         {\tt\small pmisra@cs.wright.edu}}
-%}
+% Use the decimals to balance columns based on number of authors
+\author
+{
+    \parbox{0.45\textwidth}{
+        \centering
+        Author 1 \\
+        Institution 1 \\
+        {\tt\small
+            email\_1
+        }
+    }
+    \hspace*{0.1\textwidth}
+    \parbox{0.45\textwidth}{
+        \centering
+        Author 2 \\
+        Institution 2 \\
+        {\tt\small
+            email\_2
+        }
+    }
+}
 
-% This might go back in
-%\author{Huibert Kwakernaak$^{1}$ and Pradeep Misra$^{2}$% <-this % stops a space
-%\thanks{*This work was not supported by any organization}% <-this % stops a space
-%\thanks{$^{1}$H. Kwakernaak is with Faculty of Electrical Engineering, Mathematics and Computer Science,
-%        University of Twente, 7500 AE Enschede, The Netherlands
-%        {\tt\small h.kwakernaak at papercept.net}}%
-%\thanks{$^{2}$P. Misra is with the Department of Electrical Engineering, Wright State University,
-%        Dayton, OH 45435, USA
-%        {\tt\small p.misra at ieee.org}}%
-%}
-
-\newcommand{\sectioncolor}{violet}
 
 \begin{document}
 
