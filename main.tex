@@ -21,8 +21,8 @@
 \usepackage{mdframed}
 % TODO notes
 \usepackage[coloroftodonotes]{todonotes}
-% Lorem ipsum
-\usepackage{lipsum}
+% For hyperlinks
+\usepackage{hyperref}
 
 % The following packages can be found on http:\\www.ctan.org
 %\usepackage{graphics} % for pdf, bitmapped graphics files
@@ -76,13 +76,12 @@ YOUR DATASET NAME HERE
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{abstract}
-
+\noindent
+\textbf{
 This document is based on \textit{Datasheets for Datasets} by Gebru \textit{et
 al.} \cite{gebruDatasheetsDatasets2020}. Please see the most updated version
-\href{here}{http://arxiv.org/abs/1803.09010}
-
-\end{abstract}
+\underline{\textcolor{blue}{\href{http://arxiv.org/abs/1803.09010}{here}}}.
+}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -92,6 +91,7 @@ al.} \cite{gebruDatasheetsDatasets2020}. Please see the most updated version
     MOTIVATION
 }}
 \end{mdframed}
+
     \textcolor{\sectioncolor}{\textbf{
     For what purpose was the dataset created?
     }
@@ -481,7 +481,7 @@ al.} \cite{gebruDatasheetsDatasets2020}. Please see the most updated version
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[linecolor=\sectioncolor]
 \section*{\textcolor{\sectioncolor}{
-    PREPROCESSING/CLEANING/LABELING
+    PREPROCESSING / CLEANING / LABELING
 }}
 \end{mdframed}
 
@@ -530,6 +530,7 @@ al.} \cite{gebruDatasheetsDatasets2020}. Please see the most updated version
     USES
 }}
 \end{mdframed}
+
     \textcolor{\sectioncolor}{\textbf{
     Has the dataset been used for any tasks already?
     }
@@ -593,6 +594,7 @@ al.} \cite{gebruDatasheetsDatasets2020}. Please see the most updated version
     DISTRIBUTION
 }}
 \end{mdframed}
+
     \textcolor{\sectioncolor}{\textbf{
     Will the dataset be distributed to third parties outside of the entity
     (e.g., company, institution, organization) on behalf of which the dataset
@@ -670,6 +672,7 @@ al.} \cite{gebruDatasheetsDatasets2020}. Please see the most updated version
     MAINTENANCE
 }}
 \end{mdframed}
+
     \textcolor{\sectioncolor}{\textbf{
     Who is supporting/hosting/maintaining the dataset?
     }
@@ -749,15 +752,6 @@ al.} \cite{gebruDatasheetsDatasets2020}. Please see the most updated version
     %%%
     YOUR ANSWER HERE \\
     %%%
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\addtolength{\textheight}{-12cm}   % This command serves to balance the column lengths
-                                  % on the last page of the document manually. It shortens
-                                  % the textheight of the last page by a suitable amount.
-                                  % This command does not take effect until the next page
-                                  % so it should come on the page before the last. Make
-                                  % sure that you do not shorten the textheight too much.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \bibliographystyle{plain}
 \bibliography{refs}
